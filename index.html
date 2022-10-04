@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="external.css">
+  <script type="text/javascript" src="external.js"></script>
   <style>
   .image{
 	max-width:100%;
@@ -43,15 +45,24 @@
 
 </head>
 
+
 <div class="container-fluid">
 	
-  <div class="row content">
+  <<div class="row content">
     
 
     <div class="col-sm-10 sidenav" style="background-color:darkgrey">
 		<div class = "first row" >
 			<div class="col-sm-4">
-			<img class="image" src = "Images/Josh.png">
+			    <button
+      type="button"
+      
+      data-bs-toggle="modal"
+      data-bs-target="#myModal"
+	  
+    >
+      
+    <img class="image myImg" src = "Images/Josh.png"alt="image of josh"></button>
 			
 
 			
@@ -59,12 +70,20 @@
 			</div>
 			
 			<div class="col-sm-4">
-			<img class="image" src = "Images/Josh Brolin.png">
+				<button
+      type="button"
+      
+      data-bs-toggle="modal"
+      data-bs-target="#myModal"
+    >
+      
+    <img class="image" id="myImg" src = "Images/Josh Brolin.png"alt="image of josh"></button>
+			
 			
 			
 			</div>
 			<div class="col-sm-4">
-				<img class="image" src = "Images/Josh Widdicombe.png"Style>
+				<img class="image" src = "Images/Josh Widdicombe.png"alt="image of josh">
 				
 				
 				</div>
@@ -73,29 +92,29 @@
 		
 		<div class = "second row">
 			<div class="col-sm-4">
-			<img class="image" src = "Images/Josh Glad.png">
+			<img class="image" src = "Images/Josh Glad.png"alt="image of josh">
 			
 			</div>
 			<div class="col-sm-4">
-			<img class="image" src = "Images/Josh Shelby.png">
+			<img class="image" src = "Images/Josh Shelby.png"alt="image of josh">
 			</div>
 			<div class="col-sm-4">
-			<img class="image" src = "Images/Josh White.png">
+			<img class="image" src = "Images/Josh White.png"alt="image of josh">
 			
 			</div>
 		</div>
 		
 		<div class = "third row">
 			<div class="col-sm-4">
-			<img class="image" src = "Images/Josh Void.png">
+			<img class="image" src = "Images/Josh Void.png"alt="image of josh">
 			
 			</div>
 			<div class="col-sm-4">
-			<img class="image" src = "Images/Josh Shapiro.png">
+			<img class="image" src = "Images/Josh Shapiro.png"alt="image of josh">
 			
 			</div>
 			<div class="col-sm-4">
-			<img class="image" src = "Images/Josh Monster.png">
+			<img class="image" src = "Images/Josh Monster.png"alt="image of josh">
 			</div>
 		</div>
 		
@@ -111,12 +130,13 @@
 			<hr>
 		
 		<div class= menu>
+			<nav>
         <a href="index.html"style="color:red">Home</a><br>
 		<a href="index.html"style="color:red">Photos</a><br>
 		<a href="bio.html"style="color:white">Bio</a><br>
 		<a href="blog.html"style="color:white">Blog</a><br>
 		<a href="contact.html"style="color:white">Contact</a>
-		
+			</nav>
 		</div>
 		<a href="https://www.instagram.com/"> 
 		<img src="Images/instagram.svg"
@@ -144,6 +164,18 @@
 <footer class="container-fluid">
   <p>Josh moment</p>
 </footer>
+
+<div id="myModal" class="modal">
+
+	<!-- The Close Button -->
+	<span class="close">&times;</span>
+  
+	<!-- Modal Content (The Image) -->
+	<img class="modal-content" id="img01">
+  
+	<!-- Modal Caption (Image Text) -->
+	<div id="caption"></div>
+  </div>
 
 </body>
 </html>
